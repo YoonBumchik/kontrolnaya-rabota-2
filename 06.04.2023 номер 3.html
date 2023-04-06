@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class Person {
+  constructor(name, age, gender, height, weight) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.height = height;
+    this.weight = weight;
+  }
+}
+const user = new Person("Маширо",'16','женский','165','49')
+const user1 = new Person("Кокоро",'16','женский','166','49')
+const user2 = new Person("Райден",'24','женский','180','57')
+const user3 = new Person("Липас",'18','мужской','182','62')
+const user4 = new Person("Влад",'26','мужской','180','65')
+const user5 = new Person("Лоскич",'21','мужской','179','67')
+const user6 = new Person("Глент",'22','мужской','177','71')
+const user7 = new Person("Яэ",'27','женский','174','54')
+const user8 = new Person("Нахида",'10','женский','138','37')
+const user9 = new Person("Изуку",'14','мужской','166','61')
+
+const Person1 = Person.sort((a, b) => a.name-b.name);
+const Person2 = Person.sort((a, b) => a.age-b.age);
+const Person3 = Person.sort((a, b) => a.gender-b.gender);
+const Person4 = Person.sort((a, b) => a.height-b.height);
+const Person5 = Person.sort((a, b) => a.weight-b.weight);
+
+function vvod (Person) {
+	if ('name') {
+		console.log('Person1')
+	} 
+	else if ('age') {
+		console.log('Person2')
+	}
+	else if ('gender') {
+		console.log('Person3')
+	}
+	else if ('height') {
+		console.log('Person4')
+	}
+	else if ('weight') {
+		console.log('Person5')
+	}
+}
+
+vvod(prompt('По какому значению отсортировать массив?'));
+
+</script>
+</body>
+</html>
